@@ -1,0 +1,56 @@
+.banner {
+    background: var(--cor-de-fundo2);
+    color: var(--texto-normal);
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.banner__titulo {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.banner__pesquisa {
+    background: transparent;
+    border: transparent;
+    border-bottom: 1px solid #c6c6c6;
+    color: var(--texto-normal);
+    padding: 0.8em;
+    width: 100%;
+}
+
+.banner__pesquisa::placeholder {
+    font-family: var(--font-principal);
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 35px;
+    color: var(--texto-trans);
+    background: url(../image/lupa.png) no-repeat;
+}
+
+@media screen and (min-width: 1024px)  {
+    .banner {
+        max-width: 984px;
+        margin: 0 auto;
+        padding-bottom: 1.5em;
+    }
+
+    .banner__pesquisa {
+        max-width: 400px;
+        margin-left: 30%;
+    }
+
+    .banner-div-titulo {
+        padding: 1.5em 1em;
+        background: no-repeat url(https://www.pngall.com/wp-content/uploads/6/Koenigsegg-PNG-Clipart.png);
+        background-size: contain;
+        background-position: center;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .banner__pesquisa {
+        margin-left: 30%;
+    }
+}

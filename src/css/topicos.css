@@ -1,0 +1,49 @@
+.topicos {
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.topicos-lista {
+    padding: 1em 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.topicos-item {
+    background: var(--texto-trans);
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    padding: 0.7em;
+    margin: 0.5em;
+}
+
+.logo {
+    width: 100%;
+    aspect-ratio: 3/3;
+    object-fit: contain;
+}
+
+@media screen and (min-width: 1024px) {
+    .topicos {
+        max-width: 984px;
+        margin: 0 auto;
+    }
+    
+    .topicos-lista {
+        justify-content: center;
+    }
+}
+
+
+@media screen and (min-width: 1728px) {
+    .topicos {
+        max-width: 1688px;
+        margin: 0 auto;
+    }
+
+    .topicos-lista {
+        justify-content: center;
+    }
+}

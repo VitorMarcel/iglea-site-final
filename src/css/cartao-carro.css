@@ -1,0 +1,51 @@
+.cartao {
+    max-width: 250px;
+    width: 250px;
+    max-height: 370px;
+    height: 370px;
+    background: #eeeeee;
+    padding:1.5em 0 0 2em;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.marca {
+    width: 50%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+.carro {
+    width: 140%;
+}
+
+.cartao-texto__principal {
+    text-transform: uppercase;
+}
+.cartao-texto__secundario {
+    color: var(--texto-trans);
+    font-size: 13px;
+    font-family: var(--font-secundaria);
+}
+
+.sport {
+    font-size: 19px;
+}
+
+@media screen and (min-width: 1024px) {
+    .card-flex {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .card {
+        max-width: 30%;
+        margin-left: 2%;
+    }
+
+    .card-flex {
+        display: block;
+    }
+}
